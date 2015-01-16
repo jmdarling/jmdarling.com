@@ -58,3 +58,9 @@ body {
 #menu > li:hover {
     cursor: pointer;
 }
+
+#name_header {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Lobster Two, sans-serif;
+}
