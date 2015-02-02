@@ -2,5 +2,5 @@ box: wercker/default
 deploy:
     steps:
         - script:
-        name: Deploy to aso
-        code: find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD $FTP_SERVER/{} \;
+            name: Deploy to aso
+            code: find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD $FTP_SERVER/{} \;
