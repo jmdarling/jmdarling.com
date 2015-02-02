@@ -1,2 +1,2 @@
 after_success:
-    "find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp:$FTP_SERVER/{} \;"
+    "find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp:$FTP_SERVER/{} \\;"
