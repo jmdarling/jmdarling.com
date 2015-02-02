@@ -3,7 +3,7 @@ p , h1, h2, h3, h4, a, li {
     font-family: Raleway, sans-serif;
 }
 html {
-    background: url(../images/blurred_buildings.png) no-repeat center center fixed;
+    background: url(../images/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
