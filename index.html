@@ -21,11 +21,13 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/responsive-nav.css"/>
     <link rel="stylesheet" href="css/style.css">
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/responsive-nav.min.js"></script>
     <script src="js/menu.js"></script>
 
     <!-- Favicon
@@ -37,21 +39,17 @@
 
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="navbar">
+    <header class="navbar">
         <img src="images/jonathan_darling_logo_red_200_200.png" />
-        <ul id="menu">
-            <li id="about_me_button" class="menu_item selected">About Me</li>
-            <li id="projects_button" class="menu_item">Projects</li>
-            <li id="resume_button" class="menu_item">Resume</li>
-            <li id="contact_me_button" class="menu_item">Contact Me</li>
-        </ul>
-    </div>
-
-
-    <div id="about_me_content" class="row">
-        <div class="two columns offset-by-one">
-        </div>
-    </div>
+        <nav id="nav" class="nav-collapse">
+            <ul>
+                <li class="active"><a href="#about" id="about_me_button">About Me</a></li>
+                <li><a href="#projects" id="projects_button">Projects</a></li>
+                <li><a href="#resume" id="resume_button">Résumé</a></li>
+                <li><a href="#contact" id="contact_me_button">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- End Document
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->

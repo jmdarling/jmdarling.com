@@ -10,10 +10,6 @@ html {
     background-size: cover;
 }
 
-body {
-    background-color: #3a3a3a;
-}
-
 .navbar {
     position: fixed;
     top: 0;
@@ -33,34 +29,42 @@ body {
     vertical-align: top;
 }
 
-#menu {
+#nav {
     float: right;
-    display: inline-block;
-
-    list-style-type: none;
 }
 
-#menu > li {
+#nav li {
+    display: inline;
+}
+
+#nav a {
     margin-right: .5em;
     padding: 0 .2em;
     display: inline-block;
 
+    width: auto;
     height: 60px;
 
     font-size: 1.3em;
+    background-color: #FFFFFF;
 }
 
-#menu > li.selected {
+#nav li.active a {
     background-color: crimson;
     color: #FFFFFF;
 }
 
-#menu > li:hover {
+#nav li:hover {
     cursor: pointer;
 }
 
-#name_header {
-    text-align: center;
-    color: #FFFFFF;
-    font-family: Lobster Two, sans-serif;
+/*Remove link text decoration and color.*/
+#nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    float: right;
+    margin-right: 5px;
 }
