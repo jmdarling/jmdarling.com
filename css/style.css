@@ -15,19 +15,32 @@ a {
     font-family: Raleway, sans-serif;
 }
 
+/*Colors*/
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-purple {
+    color: purple;
+}
+
 /*Set full page background*/
 html {
-    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background: url(../images/bg2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: 0 60px;
+    /*background-position: 0 60px;*/
 }
 
-/*Navbar Styles ***************************************************/
+/*Navbar Styles
+*******************************************************************************/
 #navbar {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -118,3 +131,78 @@ html {
         background-color: white;
     }
 }
+/*END Navbar Styles
+*******************************************************************************/
+
+/*Main Content Styles
+*******************************************************************************/
+#main-icon {
+    margin: 5px;
+
+    width: 50px;
+    height: 50px;
+}
+
+#content {
+    margin: 5% 0 0 2%;
+    width: 40%;
+}
+
+@media (max-width:48.000em) {
+    #content {
+        width: 100%;
+    }
+}
+
+#content-header {
+    text-align: center;
+
+    color: #FFFFFF;
+    font-size: 4em;
+}
+
+#sub-header-wrapper {
+    text-align: center;
+}
+
+#sub-header {
+    display: inline;
+    text-align: center;
+
+    /*border-top: solid 1px #FFFFFF;*/
+    /*border-bottom: solid 1px #FFFFFF;*/
+
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+#buttons-wrapper {
+    margin-left: 10%;
+    width: 80%;
+}
+
+#buttons-wrapper button {
+    display: inline-block;
+    margin-top: 50px;
+
+    width: 40%;
+    height: 40px;
+
+    background-color: transparent;
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+}
+
+#github-button {
+    margin-left: 5%;
+}
+
+#linkedin-button {
+    margin-left: 10%;
+}
+
+#main-text {
+    color: #FFFFFF;
+}
+/*END Main Content Styles
+*******************************************************************************/
