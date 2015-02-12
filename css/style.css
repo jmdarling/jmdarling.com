@@ -191,6 +191,16 @@ html {
     background-color: transparent;
     color: #FFFFFF;
     border: solid 1px #FFFFFF;
+
+    -webkit-transition: border-color 0.2s linear;
+    -moz-transition: border-color 0.2s linear;
+    -ms-transition: border-color 0.2s linear;
+    -o-transition: border-color 0.2s linear;
+    transition: border-color 0.2s linear;
+}
+
+#buttons-wrapper button:hover {
+    border-color: crimson;
 }
 
 #github-button {
