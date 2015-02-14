@@ -1,3 +1,5 @@
+/*General Styles
+*******************************************************************************/
 /*Border-box*/
 html {
   box-sizing: border-box;
@@ -7,25 +9,12 @@ html {
 }
 
 /*Standardize font color and family*/
-p , h1, h2, h3, h4, li {
-    color: #333;
+p, h1, h2, h3, h4, li {
+    color: #FFFFFF;
     font-family: Josefin Sans, sans-serif;
 }
 a {
     font-family: Josefin Sans, sans-serif;
-}
-
-/*Colors*/
-.text-red {
-    color: red;
-}
-
-.text-blue {
-    color: blue;
-}
-
-.text-purple {
-    color: purple;
 }
 
 /*Set full page background*/
@@ -37,6 +26,8 @@ html {
     background-size: cover;
     /*background-position: 0 60px;*/
 }
+/*END General Styles
+*******************************************************************************/
 
 /*Navbar Styles
 *******************************************************************************/
@@ -156,7 +147,6 @@ html {
 
 #content-header {
     text-align: center;
-
     color: #FFFFFF;
     font-size: 4em;
 }
@@ -169,11 +159,9 @@ html {
     display: inline;
     text-align: center;
 
-    /*border-top: solid 1px #FFFFFF;*/
-    /*border-bottom: solid 1px #FFFFFF;*/
-
     color: #FFFFFF;
     font-size: 2em;
+    font-weight: 100;
 }
 
 #buttons-wrapper {
@@ -218,6 +206,7 @@ html {
 
 #resume-link {
     color: #FFFFFF;
+    font-size: 1.3em;
     text-decoration: none;
 
     -webkit-transition: color 0.2s linear;
@@ -229,9 +218,6 @@ html {
 
 #resume-link:hover {
     color: #0c96d5;
-}
-
-#resume-link:visited {
 }
 
 #main-text {
