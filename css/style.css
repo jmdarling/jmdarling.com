@@ -146,9 +146,9 @@ html {
 }
 
 #content-header {
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 4em;
+    margin: 0 15% 20px 15%;
+
+    width: 70%;
 }
 
 #sub-header-wrapper {
@@ -162,6 +162,15 @@ html {
     color: #FFFFFF;
     font-size: 2em;
     font-weight: 100;
+}
+
+#main-text {
+    margin-left: 10%;
+
+    width: 80%;
+
+    color: #FFFFFF;
+    font-size: 1.3em;
 }
 
 #buttons-wrapper {
@@ -218,10 +227,6 @@ html {
 
 #resume-link:hover {
     color: #0c96d5;
-}
-
-#main-text {
-    color: #FFFFFF;
 }
 /*END Main Content Styles
 *******************************************************************************/
