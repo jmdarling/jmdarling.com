@@ -1,0 +1,75 @@
+/*GENERAL*/
+body {
+    background-color: #4473FF;
+    color: #EEEEEE;
+}
+
+a {
+    color: #EEEEEE;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+a:hover {
+    color: #FF2C61;
+}
+
+button {
+    border-color: #EEEEEE;
+    color: #EEEEEE;
+    -webkit-transition: border-color .5s, color .5s;
+    -moz-transition: border-color .5s, color .5s;
+    -ms-transition: border-color .5s, color .5s;
+    -o-transition: border-color .5s, color .5s;
+    transition: border-color .5s, color .5s;
+}
+
+button:hover {
+    border-color: #FF2C61;
+    color: #FF2C61;
+}
+
+/*HELPERS*/
+.centered-text {
+    text-align: center;
+}
+
+.large-text {
+    font-size: 1.3em;
+}
+
+.inline-links > li {
+    display: inline-block;
+    margin: 0 2em;
+
+    cursor: pointer;
+    font-size: 1.5em;
+    list-style: none;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.inline-links > li:hover {
+    color: #FF2C61;
+}
+
+img.rounded {
+    border-radius: 30px;
+}
+
+/*CONTENT*/
+#title {
+    font-family: 'Lobster', sans-serif;
+    font-size: 5em;
+    text-align: center;
+}
+
+#title span:nth-child(even) {
+    color: #FF2C61;
+}
