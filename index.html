@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
     <link rel="stylesheet" href="css/app.css">
 
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/Chart.js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -45,12 +51,13 @@
             <li>Contact</li>
         </ul>
         <hr/>
-        <section class="about">
+        <section class="about row">
             <img src="images/profile_picture.png" alt="Jonathan Darling" class="rounded three columns"/>
             <div class="nine columns">
                 <p class="large-text">A generalist web developer, my primary skills lie in creating powerful yet easy to use user experiences, automated test creation, and development process improvement. I am a strong believer that no development task is finished until it is fully documented and has test coverage. I am eager to learn and passionate about new technologies.</p>
                 <a href="files/jonathan_darling-resume.pdf" class="large-text">Resume</a>
             </div>
+            <canvas id="experience-chart" class="twelve columns" height="90px"></canvas>
         </section>
     </div>
 
