@@ -17,6 +17,21 @@ a:hover {
     color: #FF2C61;
 }
 
+button {
+    border-color: #EEEEEE;
+    color: #EEEEEE;
+    -webkit-transition: border-color .5s, color .5s;
+    -moz-transition: border-color .5s, color .5s;
+    -ms-transition: border-color .5s, color .5s;
+    -o-transition: border-color .5s, color .5s;
+    transition: border-color .5s, color .5s;
+}
+
+button:hover {
+    border-color: #FF2C61;
+    color: #FF2C61;
+}
+
 /*HELPERS*/
 .centered-text {
     text-align: center;
@@ -24,6 +39,24 @@ a:hover {
 
 .large-text {
     font-size: 1.3em;
+}
+
+.inline-links > li {
+    display: inline-block;
+    margin: 0 2em;
+
+    cursor: pointer;
+    font-size: 1.5em;
+    list-style: none;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+.inline-links > li:hover {
+    color: #FF2C61;
 }
 
 img.rounded {
@@ -38,23 +71,5 @@ img.rounded {
 }
 
 #title span:nth-child(even) {
-    color: #FF2C61;
-}
-
-#page-nav-links > li {
-    display: inline-block;
-    margin: 0 2em;
-
-    cursor: pointer;
-    font-size: 1.5em;
-    list-style: none;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
-    transition: color .5s;
-}
-
-#page-nav-links > li:hover {
     color: #FF2C61;
 }
