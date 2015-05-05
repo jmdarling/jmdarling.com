@@ -1,4 +1,12 @@
-box: wercker/default
+box: wercker/nodejs
+build:
+    steps:
+        - script:
+            name: install bower
+            code: sudo npm install -g bower
+        - script:
+            name: run bower
+            code: bower install
 deploy:
     steps:
         - script:
