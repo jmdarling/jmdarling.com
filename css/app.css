@@ -4,9 +4,26 @@ body {
     color: #EEEEEE;
 }
 
+a {
+    color: #EEEEEE;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+a:hover {
+    color: #FF2C61;
+}
+
 /*HELPERS*/
 .centered-text {
     text-align: center;
+}
+
+.large-text {
+    font-size: 1.3em;
 }
 
 img.rounded {
