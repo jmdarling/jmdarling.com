@@ -1,0 +1,22 @@
+{
+  "name": "jmdarling.com",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jmdarling/jmdarling.com",
+  "authors": [
+    "Jonathan Darling <jmdarling@me.com>"
+  ],
+  "description": "The web home of Jonathan Darling - Generalist Developer",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "~2.0.4",
+    "normalize.css": "~3.0.3"
+  }
+}
