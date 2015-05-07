@@ -1,6 +1,21 @@
 (function() {
     'use strict';
 
+    var projectTemplate = _.template(
+        [
+            '<div class="project-row">',
+                '<img src="<%= imageUrl %>" class="rounded three columns"/>',
+                '<div class="nine columns">',
+                    '<p><%= description %></p>',
+                    '<ul class="inline-links centered-text">',
+                        '<li><a href="<%= sourceLink %>"><i class="fa fa-github"></i> View source on GitHub</a></li>',
+                        '<li><a href="<%= liveLink %>"><i class="fa fa-globe"></i> View it live</a></li>',
+                    '</ul>',
+                '</div>',
+            '</div>'
+        ].join('')
+    );
+
     $(document).ready(function() {
        setupChart();
     });
