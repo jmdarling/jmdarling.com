@@ -38,7 +38,6 @@
         };
 
         var options = {
-            maintainAspectRatio: false,
             responsive: true,
             scaleFontColor: 'rgba(238,238,238,0.8)',
             scaleFontFamily: '"Raleway", "Helvetica Neue", "Helvetica", "Arial", sans-serif',
