@@ -6,8 +6,9 @@
             '<div class="project-row">',
                 '<img src="<%= imageUrl %>" class="rounded three columns"/>',
                 '<div class="nine columns">',
+                    '<h3><%= name %></h3>',
                     '<p><%= description %></p>',
-                    '<ul class="inline-links centered-text">',
+                    '<ul class="inline-items">',
                         '<li><a href="<%= sourceLink %>"><i class="fa fa-github"></i> View source on GitHub</a></li>',
                         '<li><a href="<%= liveLink %>"><i class="fa fa-globe"></i> View it live</a></li>',
                     '</ul>',
@@ -16,9 +17,27 @@
         ].join('')
     );
 
+    var $pageNavLinks;
+    var $projectsSection;
+
     $(document).ready(function() {
-       setupChart();
+        $pageNavLinks = $('#page-nav-links').find('> li');
+        $projectsSection = $('section.projects');
+
+        $pageNavLinks.click(pageNavLinksClick);
+
+        setupChart();
+        populateProjects();
     });
+
+    function pageNavLinksClick(link) {
+        var section = link.target.innerText.toLowerCase();
+        var scrollDestination = $('#' + section).offset().top;
+
+        $('html, body').animate({
+           scrollTop: scrollDestination
+        }, 'slow');
+    }
 
     function setupChart() {
         var context = $('#experience-chart').get(0).getContext('2d');
@@ -48,5 +67,14 @@
         };
 
         var experienceChart = new Chart(context).Bar(data, options);
+    }
+
+    function populateProjects() {
+        $.getJSON('projects.json', function (projects) {
+            projects.forEach(function(project) {
+                var $projectMarkup = $(projectTemplate(project));
+                $projectsSection.append($projectMarkup);
+            });
+        });
     }
 })();
