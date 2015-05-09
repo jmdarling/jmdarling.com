@@ -37,22 +37,19 @@ button:hover {
     text-align: center;
 }
 
+.very-large-text {
+    font-size: 1.5em;
+}
+
 .large-text {
     font-size: 1.3em;
 }
 
-.inline-links > li {
+.inline-items > li {
     display: inline-block;
-    margin: 0 2em;
+    margin-right: .75em;
 
-    cursor: pointer;
-    font-size: 1.5em;
     list-style: none;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
-    transition: color .5s;
 }
 
 .inline-links > li:hover {
@@ -71,5 +68,20 @@ img.rounded {
 }
 
 #title span:nth-child(even) {
+    color: #FF2C61;
+}
+
+#page-nav-links > li {
+    margin: 0 2em;
+
+    cursor: pointer;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5s;
+}
+
+#page-nav-links > li:hover {
     color: #FF2C61;
 }

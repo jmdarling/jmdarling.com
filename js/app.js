@@ -17,9 +17,27 @@
         ].join('')
     );
 
+    var $pageNavLinks;
+    var $projectsSection;
+
     $(document).ready(function() {
-       setupChart();
+        $pageNavLinks = $('#page-nav-links').find('> li');
+        $projectsSection = $('section.projects');
+
+        $pageNavLinks.click(pageNavLinksClick);
+
+        setupChart();
+        populateProjects();
     });
+
+    function pageNavLinksClick(link) {
+        var section = link.target.innerText.toLowerCase();
+        var scrollDestination = $('#' + section).offset().top;
+
+        $('html, body').animate({
+           scrollTop: scrollDestination
+        }, 'slow');
+    }
 
     function setupChart() {
         var context = $('#experience-chart').get(0).getContext('2d');
