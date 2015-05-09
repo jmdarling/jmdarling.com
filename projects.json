@@ -1,0 +1,9 @@
+[
+  {
+    "name": "EZEDIT",
+    "description": "Created in the 24 hour hackathon, \"Hack UTD\", EZEDIT is a platform as a service designed to make it easy for site builders to allow their end users the ability to update content on their web pages.",
+    "imageUrl": "images/ezedit.png",
+    "sourceLink": "https://github.com/ezedit/ezedit",
+    "liveLink": "https://ezedit.herokuapp.com"
+  }
+]
