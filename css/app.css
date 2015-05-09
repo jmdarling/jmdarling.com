@@ -85,3 +85,10 @@ img.rounded {
 #page-nav-links > li:hover {
     color: #FF2C61;
 }
+
+/*MOBILE*/
+@media only screen and (max-width : 750px) {
+    #experience-chart {
+        display: none;
+    }
+}
