@@ -6,7 +6,7 @@
             '<div class="project-row">',
                 '<img src="<%= imageUrl %>" class="rounded three columns"/>',
                 '<div class="nine columns">',
-                    '<h3><%= name %></h3>',
+                    '<h4><%= name %></h4>',
                     '<p><%= description %></p>',
                     '<ul class="inline-items">',
                         '<li><a href="<%= sourceLink %>"><i class="fa fa-github"></i> View source on GitHub</a></li>',
