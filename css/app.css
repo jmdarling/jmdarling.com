@@ -1,94 +1,77 @@
 /*GENERAL*/
 body {
-    background-color: #4473FF;
-    color: #EEEEEE;
+  background-color: #4473ff;
+  color: #eeeeee;
 }
-
 a {
-    color: #EEEEEE;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
-    transition: color .5s;
+  color: #EEEEEE;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
-
 a:hover {
-    color: #FF2C61;
+  color: #ff2c61;
 }
-
 button {
-    border-color: #EEEEEE;
-    color: #EEEEEE;
-    -webkit-transition: border-color .5s, color .5s;
-    -moz-transition: border-color .5s, color .5s;
-    -ms-transition: border-color .5s, color .5s;
-    -o-transition: border-color .5s, color .5s;
-    transition: border-color .5s, color .5s;
+  border-color: #eeeeee;
+  color: #eeeeee;
+  -webkit-transition: border-color 0.5s color 0.5s;
+  -moz-transition: border-color 0.5s color 0.5s;
+  -ms-transition: border-color 0.5s color 0.5s;
+  -o-transition: border-color 0.5s color 0.5s;
+  transition: border-color 0.5s color 0.5s;
 }
-
 button:hover {
-    border-color: #FF2C61;
-    color: #FF2C61;
+  border-color: #ff2c61;
+  color: #ff2c61;
 }
-
 /*HELPERS*/
 .centered-text {
-    text-align: center;
+  text-align: center;
 }
-
 .very-large-text {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
-
 .large-text {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
-
 .inline-items > li {
-    display: inline-block;
-    margin-right: .75em;
-
-    list-style: none;
+  display: inline-block;
+  margin-right: .75em;
+  list-style: none;
 }
-
 .inline-links > li:hover {
-    color: #FF2C61;
+  color: #ff2c61;
 }
-
 img.rounded {
-    border-radius: 30px;
+  border-radius: 30px;
 }
-
 /*CONTENT*/
 #title {
-    font-family: 'Lobster', sans-serif;
-    font-size: 5em;
-    text-align: center;
+  font-family: 'Lobster', sans-serif;
+  font-size: 5em;
+  text-align: center;
 }
-
 #title span:nth-child(even) {
-    color: #FF2C61;
+  color: #ff2c61;
 }
-
 #page-nav-links > li {
-    margin: 0 2em;
-
-    cursor: pointer;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -ms-transition: color .5s;
-    -o-transition: color .5s;
-    transition: color .5s;
+  margin: 0 2em;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
 }
-
 #page-nav-links > li:hover {
-    color: #FF2C61;
+  color: #ff2c61;
 }
-
 /*MOBILE*/
-@media only screen and (max-width : 750px) {
-    #experience-chart {
-        display: none;
-    }
+@media only screen and (max-width: 750px) {
+  #experience-chart {
+    display: none;
+  }
 }
