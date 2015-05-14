@@ -4,9 +4,8 @@
     var projectTemplate = _.template(
         [
             '<div class="project-row margin-bottom row">',
-                '<h4 class="twelve columns"><%= name %></h4>',
-                '<img src="<%= imageUrl %>" class="rounded three columns"/>',
-                '<div class="eight columns">',
+                '<img src="<%= imageUrl %>" class="twelve columns rounded"/>',
+                '<div class="ten columns offset-by-one">',
                     '<p><%= description %></p>',
                     '<ul class="inline-items">',
                         '<li><a href="<%= sourceLink %>"><i class="fa fa-github"></i> View source on GitHub</a></li>',
