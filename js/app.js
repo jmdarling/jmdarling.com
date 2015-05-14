@@ -3,10 +3,10 @@
 
     var projectTemplate = _.template(
         [
-            '<div class="project-row">',
+            '<div class="project-row margin-bottom row">',
+                '<h4 class="twelve columns"><%= name %></h4>',
                 '<img src="<%= imageUrl %>" class="rounded three columns"/>',
-                '<div class="nine columns">',
-                    '<h4><%= name %></h4>',
+                '<div class="eight columns">',
                     '<p><%= description %></p>',
                     '<ul class="inline-items">',
                         '<li><a href="<%= sourceLink %>"><i class="fa fa-github"></i> View source on GitHub</a></li>',
@@ -73,6 +73,11 @@
         $.getJSON('projects.json', function (projects) {
             projects.forEach(function(project) {
                 var $projectMarkup = $(projectTemplate(project));
+                project.technologies.forEach(function(technology) {
+                    var $technologyMarkup = $('<li>' + technology + '</li>');
+                    $projectMarkup.find('.technologies').append($technologyMarkup);
+                });
+
                 $projectsSection.append($projectMarkup);
             });
         });
