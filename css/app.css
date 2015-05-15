@@ -5,8 +5,14 @@
 .border-right {
   border-right: 1px solid #eeeeee;
 }
+.hidden {
+  display: none;
+}
 .margin-bottom {
   margin-bottom: 20px;
+}
+.toggler {
+  cursor: pointer;
 }
 /*GENERAL*/
 body {

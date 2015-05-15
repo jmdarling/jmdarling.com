@@ -4,8 +4,8 @@
     var projectTemplate = _.template(
         [
             '<div class="project-row margin-bottom row">',
-                '<img src="<%= imageUrl %>" class="twelve columns rounded"/>',
-                '<div class="ten columns offset-by-one">',
+                '<img src="<%= imageUrl %>" class="toggler twelve columns rounded"/>',
+                '<div class="toggleable hidden ten columns offset-by-one">',
                     '<p><%= description %></p>',
                     '<ul class="inline-items">',
                         '<li><a href="<%= sourceLink %>"><i class="fa fa-github"></i> View source on GitHub</a></li>',
@@ -36,6 +36,11 @@
         $('html, body').animate({
            scrollTop: scrollDestination
         }, 'slow');
+    }
+
+    function togglerClick(event) {
+        var $toggler = $(event.target);
+        $toggler.parent().find('.toggleable').toggleClass('hidden');
     }
 
     function setupChart() {
@@ -80,5 +85,7 @@
                 $projectsSection.append($projectMarkup);
             });
         });
+
+        $('.toggler').click(togglerClick);
     }
 })();
