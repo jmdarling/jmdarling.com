@@ -84,8 +84,8 @@
 
                 $projectsSection.append($projectMarkup);
             });
-        });
 
-        $('.toggler').click(togglerClick);
+            $('.toggler').click(togglerClick);
+        });
     }
 })();
