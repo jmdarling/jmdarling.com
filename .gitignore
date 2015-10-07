@@ -1,12 +1,5 @@
 # Created by https://www.gitignore.io
 
-### Bower ###
-bower_components
-.bower-cache
-.bower-registry
-.bower-tmp
-
-
 ### WebStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
